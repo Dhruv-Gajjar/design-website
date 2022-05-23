@@ -1,13 +1,13 @@
 import { useState } from "react";
 import NextLink from "next/link";
-import logo from "../../public/assets/logo.png";
+import logo from "../public/assets/logo.png";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
 const Navbar = () => {
   const [toggleNav, setToggleNav] = useState(false);
 
   return (
-    <div className="bg-gray-100 text-black shadow-lg text-gray-700">
+    <div className="bg-[#1e4344] text-[#e8f1f1] shadow-lg">
       {/* Desktop nav */}
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex items-center justify-between py-4">
@@ -31,15 +31,16 @@ const Navbar = () => {
 
           <div className="hidden md:flex items-center space-x-3">
             <button className="">Login</button>
-            <button className="bg-orange-700 hover:bg-orange-600 text-orange-900 hover:text-orange-800 py-2 px-4 rounded">
+            <button className="bg-[#d16d2f] hover:bg-[#c2662cf8] text-zinc-200 hover:text-zinc-50 py-2 px-4 rounded">
               Signin
             </button>
           </div>
+
           {/* Mobile nav */}
           <div className="block md:hidden">
             <button onClick={() => setToggleNav(!toggleNav)}>
               {!toggleNav ? (
-                <AiOutlineClose size={20} />
+                <AiOutlineClose size={20} className="text-[#e8f1f1]" />
               ) : (
                 <AiOutlineMenu size={20} />
               )}
@@ -49,11 +50,11 @@ const Navbar = () => {
           <div
             className={
               !toggleNav
-                ? "fixed md:hidden items-center justify-between left-0 top-0 bg-gray-100 shadow-xl w-[60%] h-full transition-all ease-in-out duration-500"
+                ? "fixed md:hidden items-center justify-between left-0 top-0 bg-[#1e4344]  shadow-xl w-[60%] h-full ease-in-out duration-300"
                 : "fixed hidden"
             }
           >
-            <div className="text-center m-8 pt-10 space-y-8 text-gray-700">
+            <div className="text-center m-8 pt-10 space-y-8 text-[#e8f1f1]">
               <NextLink href="/">
                 <a>
                   <h2 className="text-2xl font-bold">Design.</h2>
@@ -70,6 +71,13 @@ const Navbar = () => {
                 <NextLink href="/contact">
                   <a>Contact</a>
                 </NextLink>
+              </div>
+
+              <div className="space-x-6 pt-6">
+                <button className="">Login</button>
+                <button className="bg-[#d16d2f] hover:bg-[#c2662cf8] text-zinc-200 hover:text-zinc-50 py-2 px-4 rounded">
+                  Signin
+                </button>
               </div>
             </div>
           </div>
