@@ -8,14 +8,14 @@ const Navbar = () => {
   const [toggleNav, setToggleNav] = useState(false);
 
   return (
-    <div className="bg-[#1e4344] text-[#e8f1f1] shadow-lg">
+    <div className="bg-[#1e4344] text-[#e8f1f1] shadow-lg fixed z-[100] w-full">
       {/* Desktop nav */}
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex items-center justify-between py-4">
           <NextLink href="/">
             <a className="flex items-center space-x-2">
               <FaHome size={20} />
-              <h2 className="text-2xl font-bold">Design.</h2>
+              <h2 className="text-2xl font-bold">DLancer</h2>
             </a>
           </NextLink>
 
@@ -52,7 +52,7 @@ const Navbar = () => {
           <div
             className={
               !toggleNav
-                ? "fixed z-[100] md:hidden items-center justify-between left-0 top-0 bg-[#1e4344] shadow-xl w-[60%] h-full ease-in-out duration-500"
+                ? "fixed z-[100] md:hidden items-center justify-between left-0 top-0 bg-[#1e4344] shadow-xl w-[60%] h-full"
                 : "fixed hidden"
             }
           >
