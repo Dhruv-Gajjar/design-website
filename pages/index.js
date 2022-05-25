@@ -60,7 +60,10 @@ export default function Home() {
             the creation process.
           </p>
 
-          <button className="bg-[#d16d2f] hover:bg-[#c2662cf8] text-[#e8f1f1] py-3 px-7 rounded">
+          <button
+            className="bg-[#d16d2f]  text-zinc-100 py-3 px-8 rounded
+              transition ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-[#ec7835] duration-300"
+          >
             Explore
           </button>
         </div>
