@@ -14,6 +14,7 @@ const services = () => {
             <Image
               isLazy
               src="/assets/img2.jpg"
+              alt="home image"
               layout="fill"
               className="object-cover"
             />
@@ -29,7 +30,7 @@ const services = () => {
             </h1>
 
             <ul className="text-lg xl:text-xl text-gray-500 space-y-6">
-              <li className="pl-10">it's personalized</li>
+              <li className="pl-10">it&apos;s personalized</li>
               <li className="pl-10">Competend</li>
               <li className="pl-10">Convenient</li>
               <li className="pl-10">Proactive</li>
@@ -51,7 +52,7 @@ const services = () => {
             </h1>
 
             <p className="text-lg xl:text-xl text-gray-500">
-              when a client is requesting something that's time sensitive.
+              when a client is requesting something that&apos;s time sensitive.
             </p>
 
             <button

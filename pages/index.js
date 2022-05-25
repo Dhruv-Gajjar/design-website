@@ -49,7 +49,12 @@ export default function Home() {
 
       <div className="bg-white py-5 grid grid-cols-1 md:grid-cols-2 gap-6 w-full h-fit items-start justify-between px-8 py-6">
         <div className="w-full h-[400px] relative">
-          <Image src={img1} layout="fill" className="object-cover" />
+          <Image
+            src={img1}
+            alt="furniture image"
+            layout="fill"
+            className="object-cover"
+          />
         </div>
 
         <div className="space-y-12 p-5 w-full h-full flex items-start flex-col justify-start">
