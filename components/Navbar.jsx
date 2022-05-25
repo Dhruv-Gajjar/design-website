@@ -1,11 +1,10 @@
 import { useState } from "react";
 import NextLink from "next/link";
-import logo from "../public/assets/logo.png";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { FaHome } from "react-icons/fa";
 
 const Navbar = () => {
-  const [toggleNav, setToggleNav] = useState(false);
+  const [toggleNav, setToggleNav] = useState(true);
 
   return (
     <div className="bg-[#1e4344] text-[#e8f1f1] shadow-xl fixed z-[100] w-full">
