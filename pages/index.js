@@ -1,7 +1,22 @@
 import Image from "next/image";
 import img1 from "../public/assets/img1.jpg";
+import person1 from "../public/assets/person1.jpg";
+import person2 from "../public/assets/person2.jpg";
+import person3 from "../public/assets/person3.jpg";
+import person4 from "../public/assets/person4.jpg";
+import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 
 export default function Home() {
+  const slideLeft = () => {
+    let slider = document.getElementById("slider");
+    slider.scrollLeft = slider.scrollLeft - 300;
+  };
+
+  const slideRight = () => {
+    let slider = document.getElementById("slider");
+    slider.scrollLeft = slider.scrollLeft - 300;
+  };
+
   return (
     <>
       <div className="w-full h-[80vh] relative text-[#e8f1f1]">
