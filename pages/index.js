@@ -1,9 +1,15 @@
 import Image from "next/image";
+import Head from "next/head";
 import img1 from "../public/assets/img1.jpg";
 
 export default function Home() {
   return (
     <>
+      <Head>
+        <title>Design | Homepage </title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+
       <div className="w-full h-[80vh] relative text-[#e8f1f1]">
         <div className="absolute bg-gradient-to-t from-black/80 left-0 top-0 w-full h-full z-30"></div>
         <div className="w-full h-full absolute left-0 top-0 flex flex-col items-center justify-center space-y-5 capitalize px-8 xl:p-16 z-30">

@@ -1,9 +1,15 @@
+import Head from "next/head";
 import { AiOutlinePhone, AiOutlineMail } from "react-icons/ai";
 import { MdOutlineLocationOn } from "react-icons/md";
 
 const contact = () => {
   return (
     <>
+      <Head>
+        <title>Contact Us</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+
       <div className="w-full h-full pt-20 text-center">
         <div className="flex flex-col my-auto items-center justify-center p-20 space-y-5">
           <h1 className="text-2xl md:text-3xl xl:text-5xl font-bold capitalize space-y-2">
