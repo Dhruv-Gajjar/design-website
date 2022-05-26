@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Head from "next/head";
+import heroImg from "../public/assets/hero.jpg";
 import img1 from "../public/assets/img1.jpg";
 
 export default function Home() {
@@ -23,7 +24,7 @@ export default function Home() {
 
         <Image
           isLazy
-          src="/../public/assets/hero.jpg"
+          src={heroImg}
           alt="hero image"
           layout="fill"
           className="object-cover"
