@@ -6,6 +6,10 @@ import { FaHome } from "react-icons/fa";
 const Navbar = () => {
   const [toggleNav, setToggleNav] = useState(true);
 
+  const toggleMenu = (e) => {
+    setToggleNav(!toggleNav);
+  };
+
   return (
     <div className="bg-[#1e4344] text-[#e8f1f1] shadow-xl fixed z-[100] w-full">
       {/* Desktop nav */}
@@ -43,7 +47,7 @@ const Navbar = () => {
 
           {/* Mobile nav */}
           <div className="block md:hidden">
-            <button onClick={() => setToggleNav(!toggleNav)}>
+            <button onClick={toggleMenu}>
               {!toggleNav ? (
                 <AiOutlineClose size={20} className="text-[#e8f1f1]" />
               ) : (
@@ -53,10 +57,12 @@ const Navbar = () => {
           </div>
 
           <div
+            id="sidebar"
+            onClick={toggleMenu}
             className={
               !toggleNav
                 ? "fixed z-[100] md:hidden items-center justify-between left-0 top-0 bg-[#1e4344] shadow-xl w-[60%] h-full  ease-in-out duration-500"
-                : "fixed left-[-100%]"
+                : "fixed left-[-100%] top-0 ease-in-out duration-500"
             }
           >
             <div className="text-center m-8 pt-10 space-y-8 text-[#e8f1f1]">
