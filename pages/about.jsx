@@ -7,7 +7,7 @@ const about = () => {
     <>
       <Head>
         <title>About Us</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.ico.png" />
       </Head>
 
       <div className="pt-20 w-full h-auto">

@@ -8,7 +8,7 @@ export default function Home() {
     <>
       <Head>
         <title>Design | Homepage </title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.ico.png" />
       </Head>
 
       <div className="w-full h-[80vh] relative text-[#e8f1f1]">

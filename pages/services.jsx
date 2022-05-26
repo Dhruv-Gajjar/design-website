@@ -5,7 +5,7 @@ const services = () => {
     <>
       <Head>
         <title>Services</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.ico.png" />
       </Head>
 
       <div className="pt-20">

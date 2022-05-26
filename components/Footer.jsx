@@ -39,10 +39,6 @@ const Footer = () => {
                 </div>
             </div>
             <div className="bg-[#1e4344] text-[#e8f1f1] flex flex-col items-center justify-center space-x-6 pb-6">
-                <p className=" text-lg pb-2">
-                    Therefore we assemble our team with top talents.
-                </p>
-
                 <div className="flex items-center space-x-6">
                     <AiFillFacebook size={20} />
                     <AiFillTwitterCircle size={20} />

@@ -7,7 +7,7 @@ const contact = () => {
     <>
       <Head>
         <title>Contact Us</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.ico.png" />
       </Head>
 
       <div className="w-full h-full pt-20 text-center">
@@ -21,11 +21,11 @@ const contact = () => {
           </p>
 
           <div className="w-full h-full">
-            <form className="flex items-center justify-center space-x-4">
+            <form className="inline-block space-y-5 md:space-y-0 md:flex items-center justify-center space-x-4">
               <input
                 type="text"
                 placeholder="Enter your email..."
-                className="w-[60%] h-10 ring-1 ring-gray-500 rounded-md"
+                className="w-full md:w-[60%] h-10 ring-1 ring-gray-500 rounded-md"
               />
               <button
                 type="submit"
